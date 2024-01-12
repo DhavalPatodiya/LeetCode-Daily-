@@ -1,3 +1,4 @@
+// Time Comp : O(n), Space : O(1)
 class Solution {
     public boolean halvesAreAlike(String s) {
         String vowels = "aeiouAEIOU";
