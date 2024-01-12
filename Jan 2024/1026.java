@@ -28,8 +28,6 @@ class Solution {
             return ;
         }
 
-        int prevMax = max;
-        int prevMin = min;
         ans = Math.max(ans, Math.abs(max - root.val));
         ans = Math.max(ans, Math.abs(min - root.val));
         
@@ -38,7 +36,5 @@ class Solution {
         min = Math.min(min, root.val);
         dfs(root.left, min, max);
         dfs(root.right, min, max);
-        max = prevMax;
-        min = prevMin;
     }
 }
